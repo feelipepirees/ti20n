@@ -10,9 +10,10 @@ namespace ExerciciosTI20N
     {
         static void Main(string[] args)
         {
+            Control controle = new Control();
+            controle.Operacao();
 
-
-
+            Console.ReadLine();
 
         }//Fim do main
     }//Fim da Classe
