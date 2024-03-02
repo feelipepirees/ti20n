@@ -24,7 +24,12 @@ namespace ExerciciosTI20N
                               "2. Exercicio 2\n" +
                               "3. Exercicio 3\n" +
                               "4. Exercicio 4\n"+
-                              "5. Exercicio 5\n");
+                              "5. Exercicio 5\n"+
+                              "6. Exercicio 6\n"+
+                              "7. Exercicio 7\n"+
+                              "8. Exercicio 8\n"+
+                              "9. Exercicio 9\n"+
+                              "10. Exercicio 10\n");
         }//Fim do Menu
 
         public void Operacao()
@@ -58,6 +63,33 @@ namespace ExerciciosTI20N
                         int num = Convert.ToInt32(Console.ReadLine());
 
                         Console.WriteLine(modelo.ExercicioCinco(num));
+                        break;
+                    case 6:
+                        Console.WriteLine("Informe um número: ");
+                        int Num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioSeis(Num));
+                        break;
+                    case 7:
+                        Console.WriteLine("Informe um número para fazer a tabuada dele: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioSete(num));
+                        break;
+                    case 8:
+                        Console.WriteLine("Informe um número: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioOito(num));
+                        break;
+                    case 9:
+                        Console.WriteLine("Informe um número: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("A Soma do número 1 ao número escolhido é: " + modelo.ExercicioNove(num));
+                        break;
+                    case 10:
+                        Console.WriteLine("Os números primos de 1 a 20 são: " + modelo.ExercicioDez());
                         break;
                     default:
                         Console.WriteLine("Código digitado não é válido! ");

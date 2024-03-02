@@ -90,7 +90,82 @@ namespace ExerciciosTI20N
             {
                 return "É Ímpar";
             }
-        }//Fim do método
+        }//Fim do Exercicio 5
+
+        //Exercicio 6 : Faça um programa que peça ao usuário um número e imprima se é positivo, negativo ou zero.
+        public string ExercicioSeis(int num)
+        {
+            if (num == 0)
+            {
+                return "É Zero";
+            }
+            else if (num > 0)
+            {
+                return "É positivo";
+            }
+            else
+            {
+                return "É negativo";
+            }
+
+        }//Fim do Exercicio 6
+        
+        //Exercicio 7 : Faça um programa que peça ao usuário um número e imprima a tabuada desse número.
+
+        public string ExercicioSete(int num)
+        {
+            string Resultado = "";
+
+            for (int i = 0; i <=10; i++)
+            {
+                Resultado += "\n" + num + " * " + i + " = " + (num * i);
+            }
+            
+            return Resultado;
+        }//Fim do Exercicio 7
+
+        //Exercicio 8 : Faça um programa que peça ao usuário um número e imprima os números de 1 até esse número.
+        public string ExercicioOito(int num)
+        {
+            string Resultado = "";
+
+            for (int i = 0; i <= num; i++)
+            {
+                Resultado += "\n" + i;
+            }
+            return Resultado;
+        }//Fim do Exercicio 8
+
+
+        //Exercicio 9 : Faça um programa que peça ao usuário um número e imprima a soma dos números de 1 até esse número.
+
+        public int ExercicioNove(int num)
+        {
+            int Resultado = 0;
+
+            for (int i = 0; i <= num; i++)
+            {
+                Resultado += i;
+            }
+            return Resultado;
+        }
+
+        //Fim do Exercicio 9
+
+        //Exercicio 10 : Faça um programa que imprima os números primos de 1 a 20.
+
+        
+        
+         
+
+        //Fim do Exercicio 10
+
+
+        //Exercicio 11: Faça um programa que peça ao usuário um número e verifique se é primo.
+
+ 
+
+
 
     }//Fim da Classe
 }//Fim do Projeto
