@@ -29,7 +29,9 @@ namespace ExerciciosTI20N
                               "7. Exercicio 7\n"+
                               "8. Exercicio 8\n"+
                               "9. Exercicio 9\n"+
-                              "10. Exercicio 10\n");
+                              "10.Exercicio 10\n"+
+                              "11.Exercicio 11\n"+
+                              "12.Exercicio 12\n");
         }//Fim do Menu
 
         public void Operacao()
@@ -91,9 +93,22 @@ namespace ExerciciosTI20N
                     case 10:
                         Console.WriteLine("Os números primos de 1 a 20 são: " + modelo.ExercicioDez());
                         break;
+                    case 11:
+                        Console.WriteLine("Informe um número para ver se ele é primo ou não");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioOnze(num));
+                        break;
+                    case 12:
+                        Console.WriteLine("Informe um número para calcular o fatorial");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioDoze(num));
+                        break;
                     default:
                         Console.WriteLine("Código digitado não é válido! ");
                         break;
+                   
 
                 }//Fim do método
             } while (opcao != 0);

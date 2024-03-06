@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -154,18 +155,58 @@ namespace ExerciciosTI20N
 
         //Exercicio 10 : Faça um programa que imprima os números primos de 1 a 20.
 
-        
-        
-         
+        public string ExercicioDez()
+        {
+            string primos = "2 3 5";
+
+            for (int i = 2; i <= 20; i++)
+            {
+                if(i % 2 != 0 && i % 3 != 0 && i % 5 != 0)
+                {
+                    primos += " " + i ;
+                }
+
+            }//Fim do For
+
+            return primos;
+
+        }
 
         //Fim do Exercicio 10
 
 
         //Exercicio 11: Faça um programa que peça ao usuário um número e verifique se é primo.
 
- 
+        public string ExercicioOnze(int num)
+        {
+            if (num % 2 != 0 && num % 3 != 0 && num % 5 != 0)
+            {
+                return "primos!";
+            }
+            else if (num == 2 || num == 3 || num == 5)
+            {
+                return "Primo!";
+            }
+            else
+            {
+                return "Não Primo!";
+            }
+        }
 
+        //Fim Exercicio 11
 
+        //Exercicio 12: Faça um programa que calcula o fatorial de um número:
+        public int ExercicioDoze(int num)
+        {
+            int fatorial = 1;
+            for (int i = num; i >= 1; i--)
+            {
+                fatorial *= i;
+            }
+            
+            return fatorial;
+
+        }
 
     }//Fim da Classe
 }//Fim do Projeto
