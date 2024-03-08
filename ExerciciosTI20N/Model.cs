@@ -203,10 +203,92 @@ namespace ExerciciosTI20N
             {
                 fatorial *= i;
             }
-            
+
             return fatorial;
 
+        }//Fim do Exercicio 12
+
+        //Exercicio 13: Faça um programa que imprima a sequência que imprima a frequencia de Fibonacci até o décimo termo.
+
+        public string ExercicioTreze()
+        {
+            string resultado = "0 1";
+            int fib1 = 0;
+            int fib2 = 1;
+            int fib3 = 0;
+
+            for(int i = 1; i <= 8; i++)
+            {
+                fib3 = fib1 + fib2;
+                resultado += " " + fib3;
+                fib1 = fib2;
+                fib2 = fib3;
+
+            }//Fim do For
+
+            return resultado;
+
+        }//Fim do Exercicio 13
+
+        //Exercicio 14:Faça um programa que peça ao usuário um número e imprima se é um número de Fibonacci.
+        public string ExercicioQuatorze(int num)
+        {
+            string resultado = "0 1";
+            int fib1 = 0;
+            int fib2 = 1;
+            int fib3 = 0;
+            
+            for(int i = 1; i <= num-2; i++)
+            {
+                fib3 = fib1 + fib2;
+                resultado += " " + fib3;
+                fib1 = fib2;
+                fib2 = fib3;
+            }
+            return resultado;
         }
+
+        //Fim do Exercicio 14
+
+        //Exercicio 15:Faça que o programa que peça ao usuário um número e imprima e calcule a soma dos seus dígitos.
+        public int ExercicioQuinze(int num)
+        {
+            
+            string resultado = "" + num; //Converte o número para texto
+            int tamanho = resultado.Length; //Retorna o tamanho do texto
+            int soma = 0;
+            for(int i = 0; i < tamanho; i++)
+            {
+                soma += Convert.ToInt32(resultado.Substring(i, 1)); //Coletando um caracter por vez
+            }
+            return soma;   
+        }
+
+        //Fim do Exercicio 15.
+
+        //length = Traz o tamanho
+
+        //Exercicio 16: Faça um programa que peça ao usuário um número e imprima os números pares e ímpares de 1 até esse número.
+        public string ExercicioDezesseis(int num)
+        {
+            string Pares = "";
+            string Impar = "";
+            for (int i = 1; i <= num; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Pares += " " + i;
+                }   
+                else
+                {
+                    Impar += " " + i;
+                }
+
+            }//Fim do For
+
+            return "Pares: " + Pares + "\nImpares: " + Impar;
+
+        }//Fim do Exercicio 16.
 
     }//Fim da Classe
 }//Fim do Projeto
