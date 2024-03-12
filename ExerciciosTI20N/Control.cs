@@ -35,7 +35,17 @@ namespace ExerciciosTI20N
                               "13.Exercicio 13\n"+
                               "14.Exercicio 14\n"+
                               "15.Exercicio 15\n"+
-                              "16.Exercicio 16\n");
+                              "16.Exercicio 16\n"+
+                              "17.Exercicio 17\n"+
+                              "18.Exercicio 18\n"+
+                              "19.Exercicio 19\n"+
+                              "20.Exercicio 20\n"+
+                              "21.Exercicio 21\n"+
+                              "22.Exercicio 22\n"+
+                              "23.Exercicio 23\n"+
+                              "24.Exercicio 24\n"+
+                              "25.Exercicio 25\n"+
+                              "26.Exercicio 26\n");
         }//Fim do Menu
 
         public void Operacao()
@@ -131,6 +141,81 @@ namespace ExerciciosTI20N
                         num = Convert.ToInt32(Console.ReadLine());
 
                         Console.WriteLine(modelo.ExercicioDezesseis(num));
+                        break;
+                    case 17:
+                        Console.WriteLine("Informe um número: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioDezessete(num));
+                        break;
+                    case 18:
+                        Console.WriteLine("Informe o primeiro número: ");
+                        double num1 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe o segundo número: ");
+                        double num2 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioDezoito(num1,num2));
+                        break;
+                    case 19:
+                        Console.WriteLine("Informe o primeiro número: ");
+                        double Celsius = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioDezenove(Celsius));
+                        break;
+                    case 20:
+                        Console.WriteLine("Informe úm número: ");
+                        double Raio = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioVinte(Raio));
+                        break;
+                    case 21:
+                        Console.WriteLine("Informe um número: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioVinteUm(num));
+                        break;
+                    case 22:
+                        Console.WriteLine("Informe o primeiro número: ");
+                        double num3 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe o segundo número: ");
+                        double num4 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioVinteDois(num3, num4));
+                        break;
+                    case 23:
+                        Console.WriteLine("Informe o primeiro número: ");
+                        double num5 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe o segundo número: ");
+                        double num6 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioVinteTres(num5, num6));
+                        break;
+                    case 24:
+                        Console.WriteLine("Infome sua idade: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioVinteQuatro(num));
+                        break;
+                    case 25:
+                        Console.WriteLine("Informe o primeiro número: ");
+                        double num7 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe o segundo número: ");
+                        double num8 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioVinteCinco(num7, num8));
+                        break;
+                    case 26:
+                        Console.WriteLine("Informe o seu peso");
+                        double peso = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe a sua altura");
+                        double altura = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioVinteSeis(peso, altura));
                         break;
                     default:
                         Console.WriteLine("Código digitado não é válido! ");
