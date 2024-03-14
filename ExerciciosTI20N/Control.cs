@@ -45,7 +45,12 @@ namespace ExerciciosTI20N
                               "23.Exercicio 23\n"+
                               "24.Exercicio 24\n"+
                               "25.Exercicio 25\n"+
-                              "26.Exercicio 26\n");
+                              "26.Exercicio 26\n"+
+                              "27.Exercicio 27\n"+
+                              "28.Exercicio 28\n"+
+                              "29.Exercicio 29\n"+
+                              "30.Exercicio 30\n"+
+                              "31.Exercicio 31\n");
         }//Fim do Menu
 
         public void Operacao()
@@ -216,6 +221,33 @@ namespace ExerciciosTI20N
                         double altura = Convert.ToInt32(Console.ReadLine());
 
                         Console.WriteLine(modelo.ExercicioVinteSeis(peso, altura));
+                        break;
+                    case 27:
+                        Console.WriteLine("Informe o seu Ano");
+                        double ano = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe o seu mês");
+                        double mes = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe o seu dia");
+                        double dia = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioVinteSete(ano, mes, dia));
+                        break;
+                    case 28:
+                        Console.WriteLine("Informe um número");
+                        double Vendas = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioVinteOito(Vendas));
+                        break;
+                    case 29:
+                        Console.WriteLine(modelo.ExercicioVinteNove());
+                        break;
+                    case 30:
+                        Console.WriteLine(modelo.ExercicioTrinta());
+                        break;
+                    case 31:
+                        Console.WriteLine(modelo.ExercicioTrintaUm());
                         break;
                     default:
                         Console.WriteLine("Código digitado não é válido! ");

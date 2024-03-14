@@ -418,7 +418,120 @@ namespace ExerciciosTI20N
         {
 
             return peso / Math.Pow(altura, 2);
-        }
+
+        }//Fim do Exercicio 26
+
+
+        //Exercicio 27:Faça um algoritmo que leia a idade de uma pessoa expressa em anos,
+        //meses e dias e escreva a idade dessa pessoa expressa apenas em dias.
+        //Considerar ano com 365 dias e mês com 30 dias.
+        public double ExercicioVinteSete(double ano, double mes, double dia)
+        {
+           
+            return (ano * 365) + (mes * 30) + dia;
+
+        }//Fim do Exercicio 27
+
+        //Exercicio 28:Faça Ler o salário fixo e o valor das vendas efetuadas pelo
+        //vendedor de uma empresa. Sabendo-se que ele recebe uma
+        //comissão de 3% sobre o total das vendas até R$ 1.500,00
+        //mais 5% sobre o que ultrapassar este valor, calcular e
+        //escrever o seu salário total
+        public double ExercicioVinteOito(double Vendas)
+        {
+
+            if(Vendas <= 1500)
+            {
+                return Vendas + 003;
+            }
+            else
+            {
+                return Vendas + 005;
+            }
+
+
+        }//Fim do Exercicio 28
+
+        //Exercicio 29:Ler 10 valores e escrever quantos desses valores lidos são NEGATIVOS
+        public int ExercicioVinteNove()
+        {
+            int num = 0;
+            int cont = 0;
+            for (int i = 0; i <= 10; i++)
+            {
+                Console.WriteLine("Informe um número: ");
+                num = Convert.ToInt32(Console.ReadLine());
+
+                if (num < 0)
+                {
+                    cont++;
+                }
+            }
+            return cont;
+
+        }//Fim do Exercicio 29
+
+        //Exercicio 30:Escreva um algoritmo para ler 10 números. Todos os
+        //números lidos com valor inferior a 40 devem ser somados.
+        //Escreva o valor final da soma efetuada
+        public int ExercicioTrinta()
+        {
+            int num = 0;
+            int soma = 0;
+
+            for (int i = 0; i <= 10; i++)
+            {
+                Console.WriteLine("Informe um número: ");
+                num = Convert.ToInt32(Console.ReadLine());
+
+                if(num > 40)
+                {
+                    soma += num;
+                }
+            }
+
+            return soma;
+
+        }//Fim Exercicio 30
+
+        //Exercicio 31:Escreva um algoritmo que permita a leitura das notas de
+        //uma turma de 20 alunos.Calcular a média da turma.Escrever a média da turma.
+        public int ExercicioTrintaUm()
+        {
+            int soma = 0;
+            int media = 0;
+            int nota = 0;
+
+            for (int i = 0; i <= 20; i++)
+            {
+                Console.WriteLine("Informe um número: ");
+                nota = Convert.ToInt32(Console.ReadLine());
+
+                soma += nota;
+            }
+            media = soma / 20;
+
+            return media;
+
+        }//Fim do Exercicio 31 
+
+        //Exercicio 32:Faça um algoritmo que calcule a quantidade de litros de
+        //combustível gasta em uma viagem, utilizando um automóvel
+        //que faz 12Km por litro.Para obter o cálculo, o usuário deve
+        //fornecer o tempo gasto na viagem e a velocidade média
+        //durante ela. Desta forma, será possível obter a distância
+        //percorrida com a fórmula DISTANCIA = TEMPO * VELOCIDADE.
+
+        //Tendo o valor da distância, basta calcular a quantidade de
+        //litros de combustível utilizada na viagem com a fórmula:
+        //LITROS_USADOS = DISTANCIA / 12.O programa deve
+        //apresentar os valores da velocidade média, tempo gasto na
+        //viagem, a distância percorrida e a quantidade de litros
+        //utilizada na viagem
+        
+        
+
+        //Fim Exercicio 32
 
     }//Fim da Classe
 }//Fim do Projeto
