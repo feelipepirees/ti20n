@@ -50,7 +50,10 @@ namespace ExerciciosTI20N
                               "28.Exercicio 28\n"+
                               "29.Exercicio 29\n"+
                               "30.Exercicio 30\n"+
-                              "31.Exercicio 31\n");
+                              "31.Exercicio 31\n"+
+                              "32.Exercicio 32\n"+
+                              "33.Exercicio 33\n"+
+                              "34.Exercicio 34\n");
         }//Fim do Menu
 
         public void Operacao()
@@ -235,19 +238,64 @@ namespace ExerciciosTI20N
                         Console.WriteLine(modelo.ExercicioVinteSete(ano, mes, dia));
                         break;
                     case 28:
-                        Console.WriteLine("Informe um número");
-                        double Vendas = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Informe as suas vendas: ");
+                        double ValorVendas = Convert.ToInt32(Console.ReadLine());
 
-                        Console.WriteLine(modelo.ExercicioVinteOito(Vendas));
+                        Console.WriteLine("Informe o seu salario: ");
+                        double SalarioFixo = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioVinteOito(ValorVendas,SalarioFixo));
                         break;
                     case 29:
                         Console.WriteLine(modelo.ExercicioVinteNove());
                         break;
                     case 30:
-                        Console.WriteLine(modelo.ExercicioTrinta());
+                        modelo.ExercicioTrinta();
                         break;
                     case 31:
                         Console.WriteLine(modelo.ExercicioTrintaUm());
+                        break;
+                    case 32:
+                        Console.WriteLine("Informe o tempo: ");
+                        int tempo = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Infome a velocidade Média: ");
+                        int VelocidadeMedia = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioTrintaDois(tempo, VelocidadeMedia));
+                        break;
+                    case 33:
+                        Console.WriteLine("Infome a Base do retângulo");
+                        int Base = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe a Altura do retângulo");
+                        int Altura = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioTrintaTres(Base,Altura));
+                        break;
+                    case 34:
+                        Console.WriteLine("Informe o Total de eleitores");
+                        double TotalEleitores = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Informe a quantidade de votos brancos");
+                        double VotosBrancos = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Informe a quantidade de votos nulos");
+                        double VotosNulos = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Informe a quantidade de votos válidos");
+                        double VotosValidos = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioTrintaQuatro(TotalEleitores, VotosBrancos, VotosNulos, VotosValidos));
+                        break;
+                    case 35:
+                        Console.WriteLine("Digite o custo de fábrica de um carro:");
+                        double custoFabrica = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("O custo final ao consumidor é: ");
+                        double custoConsumidor = Convert.ToDouble(Console.ReadLine());
+
+                        modelo.ExercicioTrintaCinco();
                         break;
                     default:
                         Console.WriteLine("Código digitado não é válido! ");

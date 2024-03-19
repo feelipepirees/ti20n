@@ -437,18 +437,18 @@ namespace ExerciciosTI20N
         //comissão de 3% sobre o total das vendas até R$ 1.500,00
         //mais 5% sobre o que ultrapassar este valor, calcular e
         //escrever o seu salário total
-        public double ExercicioVinteOito(double Vendas)
+        public double ExercicioVinteOito(double SalarioFixo, double ValorVendas)
         {
-
-            if(Vendas <= 1500)
+            double SalarioFinal = 0;
+            if(ValorVendas <= 1500)
             {
-                return Vendas + 003;
+                SalarioFinal = (ValorVendas * 0.03) + SalarioFixo;
             }
             else
             {
-                return Vendas + 005;
+                SalarioFinal = (1500 * 0.03) + ((ValorVendas - 1500) * 0.05) + SalarioFixo;
             }
-
+            return SalarioFinal;
 
         }//Fim do Exercicio 28
 
@@ -457,9 +457,9 @@ namespace ExerciciosTI20N
         {
             int num = 0;
             int cont = 0;
-            for (int i = 0; i <= 10; i++)
+            for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine("Informe um número: ");
+                Console.WriteLine((i + 1) + " Número: ");
                 num = Convert.ToInt32(Console.ReadLine());
 
                 if (num < 0)
@@ -474,23 +474,23 @@ namespace ExerciciosTI20N
         //Exercicio 30:Escreva um algoritmo para ler 10 números. Todos os
         //números lidos com valor inferior a 40 devem ser somados.
         //Escreva o valor final da soma efetuada
-        public int ExercicioTrinta()
+        public void ExercicioTrinta()
         {
             int num = 0;
             int soma = 0;
 
             for (int i = 0; i <= 10; i++)
             {
-                Console.WriteLine("Informe um número: ");
+                Console.WriteLine((i + 1) + " Número: ");
                 num = Convert.ToInt32(Console.ReadLine());
 
-                if(num > 40)
+                if(num < 40)
                 {
                     soma += num;
                 }
             }
 
-            return soma;
+            Console.WriteLine("A soma dos valores inferiores a 40 é: " + soma);
 
         }//Fim Exercicio 30
 
@@ -528,10 +528,58 @@ namespace ExerciciosTI20N
         //apresentar os valores da velocidade média, tempo gasto na
         //viagem, a distância percorrida e a quantidade de litros
         //utilizada na viagem
-        
-        
+        public string ExercicioTrintaDois(int tempo, int VelocidadeMedia)
+        {
+            int LitrosUsados = 0;
+            int Distancia = 0;
 
-        //Fim Exercicio 32
+            Distancia = tempo * VelocidadeMedia;
+
+            LitrosUsados = Distancia / 12;
+
+            return "A velocidade média é: " + VelocidadeMedia + "A Distancia percorrida é: " + Distancia + "O tempo gasto é: " + tempo + "A quantidade de litros usados foi: " + LitrosUsados;
+
+        }//Fim Exercicio 32
+
+        //Exercício 33: Escreva um algoritmo para ler as dimensões de um retângulo (base e
+        //altura), calcular e escrever a área do retângulo
+        public int ExercicioTrintaTres(int Base, int Altura)
+        {
+            int area = 0;
+            area = Base * Altura;
+            return area;
+
+        }//Fim do Exercicio 33
+
+        //Exercício 34:Escreva um algoritmo para ler o número total de eleitores de um
+        //município, o número de votos brancos, nulos e válidos.Calcular e
+        //escrever o percentual que cada um representa em relação ao total de eleitores
+        public string ExercicioTrintaQuatro(double TotalEleitores, double VotosBrancos, double VotosNulos, double VotosValidos)
+        {
+            return "O número total de Eleitores é: " + TotalEleitores + "\n O porcentual de Votos Brancos é: " + (VotosBrancos / TotalEleitores) * 100 + "\n O porcentual de Votos Nulos é: " + (VotosNulos / TotalEleitores) * 100 + "\n O porcentual de votos válidos é: " + (VotosValidos / TotalEleitores) * 100;
+        }
+        //Fim do Exercicio 34
+
+        //Exercicio 35:O custo de um carro novo ao consumidor é a soma do custo de fábrica
+        //com a porcentagem do distribuidor e dos impostos(aplicados ao custo
+        //de fábrica). Supondo que o percentual do distribuidor seja de 28% e os
+        //impostos de 45%, escrever um algoritmo para ler o custo de fábrica de
+        //um carro, calcular e escrever o custo final ao consumidor.
+        public void ExercicioTrintaCinco()
+        {
+            Console.WriteLine("Digite o custo de fábrica de um carro: ");
+            double custoFabrica = 0;
+            double percentualDistribuidor = 0.28;
+            double percentualImpostos = 0.45;
+
+
+            double custoDistribuidor = custoFabrica * percentualDistribuidor;
+            double custoImpostos = custoFabrica * percentualImpostos;
+            double custoConsumidor = custoFabrica + custoDistribuidor + custoImpostos;
+
+            Console.WriteLine("O custo final ao consumidor é: " + custoConsumidor);
+        }
+        //Fim do Exercicio 35
 
     }//Fim da Classe
 }//Fim do Projeto
