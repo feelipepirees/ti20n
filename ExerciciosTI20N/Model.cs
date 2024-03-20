@@ -581,5 +581,130 @@ namespace ExerciciosTI20N
         }
         //Fim do Exercicio 35
 
+
+        //Exercicio 36:Uma revendedora de carros usados paga a seus funcionários
+        //vendedores um salário fixo por mês, mais uma comissão também fixa
+        //para cada carro vendido e mais 5% do valor das vendas por ele
+        //efetuadas.Escrever um algoritmo que leia o número de carros por ele
+        //vendidos, o valor total de suas vendas, o salário fixo e o valor que ele
+        //recebe por carro vendido. Calcule e escreva o salário final do vendedor.
+
+
+        //Fim do Exercicio 36
+
+
+        //Exercício 51: Faça um programa que crie um vetor de números inteiros e
+        //imprima todos os elementos desse vetor.
+        public void ExercicioCinquentaUm()
+        {
+            int[] vet = new int[4]; //Declaração do vetor
+            //Preenchendo o vetor
+            for (int i = 0; i < 4; i++)
+            {
+                Console.WriteLine((i + 1) + " Número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            //Mostrar o vetor
+            for (int i = 0; i < 4; i++)
+            {
+                Console.WriteLine((i + 1) + " Posição: " + vet[i]);
+            }
+        }
+        //Fim do Exercicio 51
+
+        //Exercício 52: Faça um programa que crie um vetor de números inteiros e
+        //calcule a média dos valores presentes no vetor.
+        public int ExercicioCinquentaDois()
+        {
+            int[] vet = new int[4];
+            int soma = 0;
+            int i = 0;
+            for(i = 0; i < 4; i++)
+            {
+                Console.WriteLine((i + 1) + " Posição: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+                soma += vet[i]; //Somando
+            }
+            return soma / i;
+        }
+        //Fim do Exercicio 52
+
+        //Exercício 53:  Faça um programa que crie um vetor de números inteiros e
+        //imprima apenas os valores pares desse vetor.
+        public void ExercicioCinquentaTres()
+        {
+            int[] vet = new int[10];
+            for(int i = 0; i < 10; i++)
+            {
+                Console.WriteLine((i + 1) + "Informe um número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+
+                if (vet[i] % 2 == 0)
+                {
+                    Console.WriteLine(vet[i]);
+                }
+            }
+        }
+        //Fim do Exercicio 53
+
+
+        //Exercício 54: Faça um programa que crie um vetor de números inteiros e
+        //imprima o maior e o menor valor presente no vetor.
+        public void ExercicioCinquentaQuatro()
+        {
+            int[] vet = new int[5];
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "Informe um número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int maior = vet[0];
+            int menor = vet[0];
+
+            for (int i = 0; i < 5; i++)
+            {
+                if (vet[i] < menor)
+                {
+                    menor = vet[i];
+                }
+                else
+                {
+                    maior = vet[i];
+                }
+            }
+        }//Fim do Exercicio 54
+
+        //Exercicio 55:Faça um programa que crie um vetor de números inteiros e
+        //imprima os elementos na ordem inversa.
+        public void ExercicioCinquentaCinco()
+        {
+            int[] vet = new int[10];
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine((i + 1) + "Informe um número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int aux = 0;
+            int r = 9;
+
+            for(int i = 0; i < 4; i++)
+            {
+                aux = vet[r];
+                vet[r] = vet[i];
+                vet[i] = aux;
+                r = r - 1;
+            }
+            for(int i = 0; i < 10; i++)
+            {
+                Console.WriteLine((i + 1) + "ª Posição: " + vet[i]);
+            }
+        }//Fim do Exercicio 55
+
+        //Exercicio 56:Faça um programa que crie um vetor de números inteiros e
+        //calcule a soma de todos os valores presentes no vetor.
+        
+
+        //Fim do Exercicio 56
+
     }//Fim da Classe
 }//Fim do Projeto

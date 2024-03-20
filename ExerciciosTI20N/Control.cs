@@ -53,7 +53,12 @@ namespace ExerciciosTI20N
                               "31.Exercicio 31\n"+
                               "32.Exercicio 32\n"+
                               "33.Exercicio 33\n"+
-                              "34.Exercicio 34\n");
+                              "34.Exercicio 34\n"+
+                              "51.Exercicio 51\n"+
+                              "52.Exercicio 52\n"+
+                              "53.Exercicio 53\n"+
+                              "54.Exercicio 54\n"+
+                              "55.Exercicio 55\n");
         }//Fim do Menu
 
         public void Operacao()
@@ -296,6 +301,21 @@ namespace ExerciciosTI20N
                         double custoConsumidor = Convert.ToDouble(Console.ReadLine());
 
                         modelo.ExercicioTrintaCinco();
+                        break;
+                    case 51:
+                        modelo.ExercicioCinquentaUm();
+                        break;
+                    case 52:
+                        Console.WriteLine("A média do vetor é: " + modelo.ExercicioCinquentaDois());
+                        break;
+                    case 53:
+                        modelo.ExercicioCinquentaTres();
+                        break;
+                    case 54:
+                        modelo.ExercicioCinquentaQuatro();
+                        break;
+                    case 55:
+                        modelo.ExercicioCinquentaCinco();
                         break;
                     default:
                         Console.WriteLine("Código digitado não é válido! ");
