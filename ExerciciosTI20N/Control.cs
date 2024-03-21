@@ -58,7 +58,11 @@ namespace ExerciciosTI20N
                               "52.Exercicio 52\n"+
                               "53.Exercicio 53\n"+
                               "54.Exercicio 54\n"+
-                              "55.Exercicio 55\n");
+                              "55.Exercicio 55\n"+
+                              "56.Exercicio 56\n"+
+                              "57.Exercicio 57\n"+
+                              "58.Exercicio 58\n"+
+                              "59.Exercicio 59\n");
         }//Fim do Menu
 
         public void Operacao()
@@ -302,6 +306,65 @@ namespace ExerciciosTI20N
 
                         modelo.ExercicioTrintaCinco();
                         break;
+                    case 36:
+                        modelo.ExercicioTrintaSeis();
+                        break;
+
+                    case 37:
+                        modelo.ExercicioTrintaSete();
+                        break;
+
+                    case 38:
+                        modelo.ExercicioTrintaOito();
+                        break;
+
+                    case 39:
+                        modelo.ExercicioTrintaNove();
+                        break;
+
+                    case 40:
+                        modelo.ExercicioQuarenta();
+                        break;
+
+                    case 41:
+                        modelo.ExercicioQuarentaUm();
+                        break;
+
+                    case 42:
+                        modelo.ExercicioQuarentaDois();
+                        break;
+
+                    case 43:
+                        modelo.ExercicioQuarentaTres();
+                        break;
+
+                    case 44:
+                        modelo.ExercicioQuarentaQuatro();
+                        break;
+
+                    case 45:
+                        modelo.ExercicioQuarentaCinco();
+                        break;
+
+                    case 46:
+                        modelo.ExercicioQuarentaSeis();
+                        break;
+
+                    case 47:
+                        modelo.ExercicioQuarentaSete();
+                        break;
+
+                    case 48:
+                        modelo.ExercicioQuarentaOito();
+                        break;
+
+                    case 49:
+                        modelo.ExercicioQuarentaNove();
+                        break;
+
+                    case 50:
+                        modelo.ExercicioCinquenta();
+                        break;
                     case 51:
                         modelo.ExercicioCinquentaUm();
                         break;
@@ -316,6 +379,15 @@ namespace ExerciciosTI20N
                         break;
                     case 55:
                         modelo.ExercicioCinquentaCinco();
+                        break;
+                    case 56:
+                        Console.WriteLine("A soma dos vetores é: " + modelo.ExercicioCinquentaSeis());
+                        break;
+                    case 57:
+                        modelo.ExercicioCinquentaSete();
+                        break;
+                    case 59:
+                        modelo.ExercicioCinquentaNove();
                         break;
                     default:
                         Console.WriteLine("Código digitado não é válido! ");
