@@ -1138,5 +1138,41 @@ namespace ExerciciosTI20N
 
         //Fim do Exercicio 59
 
+        //Exercício 60: Faça um programa que crie um vetor de strings e
+        //imprima todos os elementos desse vetor em ordem alfabética.
+
+        public void ExercicioSesenta()
+        {
+            string[] vet = { "maçã", "uva", "laranja", "jabuticaba", "abacaxi" };
+
+            //Ordenando o vetor em ordem alfabética
+            Array.Sort(vet);
+
+            Console.WriteLine("Elemento do Vetor em ordem alfabética: ");
+            foreach (string elemento in vet)
+            {
+                Console.WriteLine(elemento);
+            }
+        }//Fim do Exercicio 60
+        public void ExercicioSessenta()
+        {
+            string[] vet = { "maçã", "uva", "laranja", "jabuticaba", "abacaxi" };
+
+            //Ordenando o vetor em ordem alfabética
+            Array.Sort(vet);
+
+            Console.WriteLine("Elemento do Vetor em ordem alfabética: ");
+            foreach (string elemento in vet)
+            {
+                Console.WriteLine(elemento);
+            }
+
+        }//Fim do Exercicio 60
+
+        // //Exercício 61: Faça um programa que crie um vetor de números inteiros e
+        //verifique quantas vezes um determinado valor aparece no vetor.
+
+
+
     }//Fim da Classe
 }//Fim do Projeto

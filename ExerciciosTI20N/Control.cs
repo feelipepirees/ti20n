@@ -62,7 +62,8 @@ namespace ExerciciosTI20N
                               "56.Exercicio 56\n"+
                               "57.Exercicio 57\n"+
                               "58.Exercicio 58\n"+
-                              "59.Exercicio 59\n");
+                              "59.Exercicio 59\n"+
+                              "60.Exercicio 60" );
         }//Fim do Menu
 
         public void Operacao()
@@ -389,10 +390,13 @@ namespace ExerciciosTI20N
                     case 59:
                         modelo.ExercicioCinquentaNove();
                         break;
+                    case 60:
+                        modelo.ExercicioSessenta();
+                        break;
+
                     default:
                         Console.WriteLine("Código digitado não é válido! ");
-                        break;
-                   
+                        break;                 
 
                 }//Fim do método
             } while (opcao != 0);
